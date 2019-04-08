@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>登录页</title>
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <style>
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .wrap {
+        background-image: url('./images/guide4.jpg');
+        position: absolute;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .wrap > .top {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.4rem 1rem 0 1rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .wrap .main {
+        width: 12rem;
+        position: absolute;
+        top: 17rem;
+        left: 50%;
+        margin-left: -6rem;
+      }
+      .wrap .main .email-content {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 1.4rem;
+      }
+      .wrap .main .email-content i {
+        color: rgba(255, 255, 255, 0.8);
+        margin-right: 0.4rem;
+        font-size: 1rem;
+      }
+      .wrap .main .email-content input {
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px #fff solid;
+        padding-left: 0.2rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      input::-webkit-input-placeholder {
+        /* placeholder颜色  */
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .wrap .main .login {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .wrap .main .login > .login-content {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.6);
+        color: #fff;
+        width: 12rem;
+        line-height: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+      }
+      .wrap .share {
+        display: flex;
+        line-height: 2rem;
+        width: 100%;
+        margin-top: 6.3rem;
+      }
+      .wrap .share > i {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 2rem;
+        display: block;
+        line-height: 1rem;
+        width: 3rem;
+        height: 1rem;
+      }
+      .wrap .share > i.weixin {
+        font-size: 2.29rem;
+        margin: 0 1.6rem;
+      }
+      .wrap .share > i.qq {
+        font-size: 1.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <a href="./index.html" class="iconfont icon-xiazai6"></a>
+        <a href="#">找回密码</a>
+      </div>
+      <div class="main">
+        <div class="email-content">
+          <i class="iconfont icon-user"></i>
+          <input type="text" id="email" placeholder="请输入手机号\邮箱\QQ号" />
+        </div>
+        <div class="email-content">
+          <i class="iconfont icon-mima"></i>
+          <input type="password" id="password" placeholder="请输入您的密码" />
+        </div>
+        <div class="login">
+          <a href="#" class="login-content">登录</a>
+          <a href="#">用户注册</a>
+        </div>
+        <div class="share">
+          <i class="iconfont icon-weibo"></i>
+          <i class="iconfont icon-changyonglogo28 weixin"></i>
+          <i class="iconfont icon-qq qq"></i>
+        </div>
+      </div>
+    </div>
+    <script>
+      var loginContent = document.querySelector('.login-content');
+      loginContent.onclick = function() {
+        var email = document.querySelector('#email').value;
+        var password = document.querySelector('#password').value;
+        if (email === 'lilili' && password === '66663321') {
+          location.href = './shouye.html';
+        } else {
+          alert('请输入正确的用户名和密码');
+        }
+      };
+    </script>
+  </body>
+</html>

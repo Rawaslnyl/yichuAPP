@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>聊天</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap .contact {
+        background-color: #f8f8f8;
+        box-sizing: border-box;
+        padding: 1.7rem 0.3rem 0.1rem;
+      }
+      .wrap .contact .contact-inner {
+        padding-left: 0.2rem;
+        background-color: #fff;
+        border-radius: 0.1rem;
+        height: 0.8rem;
+        display: flex;
+        line-height: 0.8rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.16rem;
+      }
+      .wrap .contact .contact-inner i {
+        display: block;
+        margin-right: 0.1rem;
+      }
+      .wrap .contact .contact-inner > input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        display: block;
+      }
+      /* chat-main */
+      .wrap .chat-main {
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 0.2rem;
+      }
+      .wrap .chat-main .main-inner a {
+        padding: 0.2rem 0.3rem;
+        margin: 0 auto;
+        display: flex;
+        height: 1.4rem;
+      }
+      .wrap .chat-main .main-inner a > img {
+        display: block;
+        width: 20%;
+        margin-right: 0.2rem;
+      }
+      .wrap .chat-main .main-inner a > div {
+        width: 80%;
+        font-size: 0.3rem;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1.5rem;
+        padding-top: 0.2rem;
+      }
+      .wrap .chat-main .main-inner a > div .time {
+        display: flex;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        justify-content: space-between;
+      }
+      .wrap .chat-main .main-inner a > div .time span {
+        display: block;
+      }
+      .wrap .chat-main .main-inner a > div .time p {
+        display: block;
+        margin: 0;
+        height: 0.4rem;
+        color: #9a9a9a;
+      }
+      .wrap .chat-main .main-inner a > div p {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 今天的天气挺好 刮风下雨下冰雹 -->
+      <div class="top">
+        <div class="top-content">
+          <div class="top-nav">
+            <a href="./message.html">
+              <span>动态</span>
+              <span>Dynamic</span>
+            </a>
+          </div>
+          <div class="top-nav">
+            <a href="./chat.html" id="top-active">
+              <span>聊天</span>
+              <span>Chat</span>
+            </a>
+          </div>
+        </div>
+        <!-- top-content结束 -->
+      </div>
+      <!-- top结束 -->
+      <div class="contact">
+        <div class="contact-inner">
+          <i class="iconfont  icon-icon-plus-search"></i>
+          <input type="text" placeholder="请输入关键字搜索" />
+        </div>
+      </div>
+      <!-- contact结束 -->
+      <div class="chat-main">
+        <div class="main-inner">
+          <a href="#">
+            <img src="./images/chat1.png" alt="" />
+            <div>
+              <div class="time">
+                <span id="active">通知</span>
+                <p>刚刚</p>
+              </div>
+              <p>''我喜欢你 像大鹏扶摇而上九万里''</p>
+            </div>
+          </a>
+        </div>
+        <!-- main-inner结束 -->
+      </div>
+      <!-- chat-main结束 -->
+      <div class="chat-main">
+        <div class="main-inner">
+          <a href="#">
+            <img src="./images/chat2.png" alt="" />
+            <div>
+              <div class="time">
+                <span id="active">通知</span>
+                <p>刚刚</p>
+              </div>
+              <p>''我喜欢你 像大鹏扶摇而上九万里''</p>
+            </div>
+          </a>
+        </div>
+        <!-- main-inner结束 -->
+      </div>
+      <!-- chat-main结束 -->
+      <div class="chat-main">
+        <div class="main-inner">
+          <a href="#">
+            <img src="./images/chat3.png" alt="" />
+            <div>
+              <div class="time">
+                <span id="active">通知</span>
+                <p>刚刚</p>
+              </div>
+              <p>''我喜欢你 像大鹏扶摇而上九万里''</p>
+            </div>
+          </a>
+        </div>
+        <!-- main-inner结束 -->
+      </div>
+      <!-- chat-main结束 -->
+      <div class="chat-main">
+        <div class="main-inner">
+          <a href="#">
+            <img src="./images/chat4.png" alt="" />
+            <div>
+              <div class="time">
+                <span id="active">通知</span>
+                <p>刚刚</p>
+              </div>
+              <p>''我喜欢你 像大鹏扶摇而上九万里''</p>
+            </div>
+          </a>
+        </div>
+        <!-- main-inner结束 -->
+      </div>
+      <!-- chat-main结束 -->
+      <footer>
+        <div class="foot-nav">
+          <div class="foot-content  ">
+            <a href="./shouye.html">
+              <i class="iconfont  icon-shouye"></i>
+              <span>首页</span></a
+            >
+          </div>
+          <div class="foot-content">
+            <a href="./message.html" id="active">
+              <i class="iconfont  icon-xiaoxi"></i>
+              <span>消息</span></a
+            >
+          </div>
+          <div class="foot-content jia">
+            <a href="./newcontent.html">
+              <i class="iconfont  icon-tianjia tianjia"></i
+            ></a>
+          </div>
+          <div class="foot-content">
+            <a href="./topic.html">
+              <i class="iconfont  icon-huati"></i>
+              <span>话题</span></a
+            >
+          </div>
+          <div class="foot-content">
+            <a href="./wode.html">
+              <i class="iconfont  icon-wode"></i>
+              <span>我的</span></a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- footer结束 -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+
+  -webkit-tap-highlight-color: transparent;
+}
+li {
+  list-style: none;
+}
+.wrap #active {
+  color: #28b9ac;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>电台</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/article-content.css">
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .wrap .top .top-inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .wrap .top .top-inner a {
+        display: block;
+        width: 46%;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .wrap .top .top-inner span {
+        width: 53%;
+        font-size: 0.3rem;
+        line-height: 1.8rem;
+      }
+      .wrap .list {
+        margin-top: 0.2rem;
+        font-size: 0.3rem;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="top-inner">
+          <a href="./shouye.html"><i class="iconfont icon-xiazai6"></i></a>
+          <span>电台</span>
+        </div>
+      </div>
+      <!-- top 结束 -->
+      <div class="swip">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/radio1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/radio2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/radio3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/radio4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .swip 结束 -->
+      <div class="list">
+        <div id="active">推荐</div>
+        <div>分类</div>
+      </div>
+      <div class="article-content">
+        <article>
+          <div class="art-top">
+            <span>浮世绘</span>
+            <div>
+              <span>一处精选</span>
+              <img src="./images/art-top.jpg" alt="">
+            </div>           
+          </div>
+          <div class="art-main">
+            <div class="art-main-left">
+              <h4>老了又怎么，又不耽误好好活着</h4>
+              <p>《奇葩说》第四期的问题是：“如果你的父母提出和你幻化卡还是肯定会款式好看好看很快就恢复”你幻化卡还是肯定会款式好</p>
+            </div>
+            <div class="art-main-right">
+               <img src="./images/art-main.jpg" alt="">
+            </div>         
+          </div>
+          <div class="art-footer">
+            <span>05-20 20:56</span>
+            <div>
+                <div class="comments">
+                  <i class="iconfont  icon-yanjing"></i>
+                  <span>1.8k</span>
+                </div>
+                <div class="comments">
+                    <i class="iconfont  icon-xin point" style="color:#000"></i>
+                    <span class="dianji">180</span>
+                  </div>
+                  <div class="comments">
+                      <i class="iconfont  icon-xiaoxi"></i>
+                      <span>1.8k</span>
+                    </div>
+            </div>
+          </div>
+        </article>
+        <!-- article 结束-->
+        <div class="article-content">
+          <article>
+            <div class="art-top">
+              <span>浮世绘</span>
+              <div>
+                <span>一处精选</span>
+                <img src="./images/art-top.jpg" alt="">
+              </div>           
+            </div>
+            <div class="art-main">
+              <div class="art-main-left">
+                <h4>老了又怎么，又不耽误好好活着</h4>
+                <p>《奇葩说》第四期的问题是：“如果你的父母提出和你幻化卡还是肯定会款式好看好看很快就恢复”你幻化卡还是肯定会款式好</p>
+              </div>
+              <div class="art-main-right">
+                 <img src="./images/art-main.jpg" alt="">
+              </div>         
+            </div>
+            <div class="art-footer">
+              <span>05-20 20:56</span>
+              <div>
+                  <div class="comments">
+                    <i class="iconfont  icon-yanjing"></i>
+                    <span>1.8k</span>
+                  </div>
+                  <div class="comments">
+                      <i class="iconfont  icon-xin"></i>
+                      <span>1.8k</span>
+                    </div>
+                    <div class="comments">
+                        <i class="iconfont  icon-xiaoxi"></i>
+                        <span>1.8k</span>
+                      </div>
+              </div>
+            </div>
+          </article>
+          <!-- article 结束-->
+    </div>
+    <!-- .wrap 结束 -->
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/point.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination'
+        }
+      });
+    </script>
+  </body>
+</html>

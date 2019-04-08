@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>消息</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/release.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap .main {
+        width: 100%;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        background-color: #f8f8f8;
+      }
+      .wrap .main .main-inner {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .wrap .main .main-inner .main-content {
+        padding: 0 0.3rem;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      .wrap .main .main-inner .main-content span {
+        font-size: 0.3rem;
+        color: #9a9a9a;
+      }
+      .wrap .main .main-inner .main-content > div {
+        width: 100%;
+        height: 3.2rem;
+        display: flex;
+      }
+      .wrap .main .main-inner .main-content > div img {
+        display: block;
+        width: 30%;
+      }
+      .wrap .main .main-inner .main-content > div > div {
+        font-size: 0.3rem;
+        box-sizing: border-box;
+        padding-left: 0.6rem;
+      }
+      .wrap .main .main-inner .main-content > div > div h4 {
+        font-size: 0.3rem;
+        height: 0.2rem;
+      }
+      .wrap .main .main-inner .main-content > div > div p {
+        margin-top: 0.5rem;
+        height: 0.2rem;
+      }
+      /* main结束  */
+      .wrap .reply {
+        margin-top: 0.2rem;
+        width: 100%;
+        padding: 0.2rem 0.3rem;
+        background-color: #fff;
+        box-sizing: border-box;
+      }
+      .wrap .reply .reply-top {
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrap .reply .reply-top span {
+        font-size: 0.3rem;
+        color: #9a9a9a;
+      }
+      .wrap .reply .reply-top a {
+        display: block;
+        font-size: 0.3rem;
+        color: #9a9a9a;
+        text-decoration: underline;
+      }
+      /* reply-mian */
+      .wrap .reply .reply-main {
+        display: flex;
+        margin-top: 0.2rem;
+        box-sizing: border-box;
+      }
+      .wrap .reply .reply-main .reply-content {
+        width: 45%;
+      }
+      .wrap .reply .reply-main .reply-content:first-child {
+        margin-right: 7%;
+      }
+      .wrap .reply .reply-main .reply-content img {
+        width: 100%;
+        display: block;
+      }
+      .wrap .reply .reply-main .reply-content div {
+        font-size: 0.3rem;
+        text-align: center;
+      }
+      .wrap .reply .reply-main .reply-content div h4 {
+        height: 0.2rem;
+      }
+      .wrap .reply .reply-main .reply-content div span {
+        color: #9a9a9a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="top-content">
+          <div class="top-nav">
+            <a href="./message.html" id="top-active">
+              <span>动态</span>
+              <span>Dynamic</span>
+            </a>
+          </div>
+          <div class="top-nav">
+            <a href="./chat.html">
+              <span>聊天</span>
+              <span>Chat</span>
+            </a>
+          </div>
+        </div>
+        <!-- top-content结束 -->
+      </div>
+      <!-- top结束 -->
+      <div class="main">
+        <div class="main-inner">
+          <div class="main-content">
+            <span>一起说：</span>
+            <div>
+              <img src="./images/mess-main.png" alt="" />
+              <div class="main-right">
+                <h4>让毒鸡汤给你醒醒脑</h4>
+                <span>大家一起来聊聊</span>
+                <p>最新更新</p>
+                <span>虽然你又胖又丑</span>
+              </div>
+            </div>
+          </div>
+          <!-- main-content结束 -->
+          <div class="reply">
+            <div class="reply-top">
+              <span>让他回信:</span>
+              <a href="#">查看全部></a>
+            </div>
+            <div class="reply-main">
+              <div class="reply-content">
+                <img src="./images/reply.png" alt="" />
+                <div>
+                  <h4>岁月寄歌</h4>
+                  <span>我很碎碎念</span>
+                </div>
+              </div>
+              <!-- reply-content结束 -->
+              <div class="reply-content">
+                <img src="./images/reply2.png" alt="" />
+                <div>
+                  <h4>想三旬</h4>
+                  <span>我很碎碎念</span>
+                </div>
+              </div>
+              <!-- reply-content结束 -->
+            </div>
+            <!-- reply-main结束 -->
+          </div>
+          <!-- reply结束 -->
+          <div class="release">
+            <div class="rel-title">
+              <img src="./images/art-top.jpg" alt="" />
+              <span>不安海水安于咸</span>
+            </div>
+            <h4>没有上进心我错了么？</h4>
+            <p>
+              我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱
+            </p>
+            <div class="rel-footer">
+              <span>05-20 20:56</span>
+              <div>
+                <div class="comments">
+                  <i class="iconfont  icon-yanjing"></i>
+                  <span>1.8k</span>
+                </div>
+                <div class="comments">
+                  <i class="iconfont  icon-xin point" style="color:#000"></i>
+                  <span class="dianji">1810</span>
+                </div>
+                <div class="comments">
+                  <i class="iconfont  icon-xiaoxi"></i>
+                  <span>1.8k</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- release结束 -->
+          <div class="release">
+            <div class="rel-title">
+              <img src="./images/art-top1.jpg" alt="" />
+              <span>不安海水安于咸</span>
+            </div>
+            <h4>没有上进心我错了么？</h4>
+            <p>
+              我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱
+            </p>
+            <div class="rel-footer">
+              <span>05-20 20:56</span>
+              <div>
+                <div class="comments">
+                  <i class="iconfont  icon-yanjing"></i>
+                  <span>1.8k</span>
+                </div>
+                <div class="comments">
+                  <i class="iconfont  icon-xin"></i>
+                  <span>1.8k</span>
+                </div>
+                <div class="comments">
+                  <i class="iconfont  icon-xiaoxi"></i>
+                  <span>1.8k</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- release结束 -->
+          <div class="release">
+            <div class="rel-title">
+              <img src="./images/art-top.jpg" alt="" />
+              <span>不安海水安于咸</span>
+            </div>
+            <h4>没有上进心我错了么？</h4>
+            <p>
+              我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱我要自己选择我这一生怎么爱
+            </p>
+            <div class="rel-footer">
+              <span>05-20 20:56</span>
+              <div>
+                <div class="comments">
+                  <i class="iconfont  icon-yanjing"></i>
+                  <span>1.8k</span>
+                </div>
+                <div class="comments">
+                  <i class="iconfont  icon-xin"></i>
+                  <span>1.8k</span>
+                </div>
+                <div class="comments">
+                  <i class="iconfont  icon-xiaoxi"></i>
+                  <span>1.8k</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- release结束 -->
+        </div>
+      </div>
+      <!-- main结束 -->
+
+      <footer>
+        <div class="foot-nav">
+          <div class="foot-content  ">
+            <a href="./shouye.html">
+              <i class="iconfont  icon-shouye"></i>
+              <span>首页</span></a
+            >
+          </div>
+          <div class="foot-content">
+            <a href="./message.html" id="active">
+              <i class="iconfont  icon-xiaoxi"></i>
+              <span>消息</span></a
+            >
+          </div>
+          <div class="foot-content jia">
+            <a href="./newcontent.html">
+              <i class="iconfont  icon-tianjia tianjia"></i
+            ></a>
+          </div>
+          <div class="foot-content">
+            <a href="./topic.html">
+              <i class="iconfont  icon-huati"></i>
+              <span>话题</span></a
+            >
+          </div>
+          <div class="foot-content">
+            <a href="./wode.html">
+              <i class="iconfont  icon-wode"></i>
+              <span>我的</span></a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- footer结束 -->
+    </div>
+    <!-- wrap结束 -->
+    <script src="./js/point.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+.wrap .top {
+  background-image: url(../images/index-top.png);
+  height: 1.6rem;
+  width: 100%;
+  display: flex;
+  padding-bottom: 0.1rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.wrap .top .top-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.wrap .top .top-content .top-nav a {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.6rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+.wrap #top-active {
+  color: rgba(255, 255, 255, 0.8);
+}
+.wrap .top .top-content .top-nav span {
+  font-size: 0.3rem;
+}

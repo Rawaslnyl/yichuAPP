@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>圆桌</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+
+    <style>
+      body {
+        background-color: #fbfbfb;
+      }
+      .wrap .pound {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 1.6rem;
+        padding-bottom: 1.3rem;
+      }
+      .wrap .pound .pound-inner a {
+        display: flex;
+        background-color: #fff;
+        font-size: 0.3rem;
+        border: 1px solid #ccc;
+        border-radius: 0.2rem;
+        margin-top: 0.3rem;
+      }
+      .wrap .pound .pound-inner a > img {
+        display: block;
+        width: 26%;
+        height: 1.8rem;
+        padding: 0.3rem;
+        margin-right: 2%;
+        box-sizing: border-box;
+      }
+      .wrap .pound .pound-inner a > div {
+        width: 60%;
+        margin-bottom: 0;
+      }
+      .wrap .pound .pound-inner a > div {
+        color: #333;
+      }
+      .wrap .pound .pound-inner a > span {
+        width: 10%;
+        display: block;
+        line-height: 1.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="top-content">
+          <div class="top-nav">
+            <a href="./topic.html">
+              <span>推荐</span>
+              <span>Recommend</span>
+            </a>
+          </div>
+          <div class="top-nav">
+            <a href="./pound.html" id="top-active">
+              <span>圆桌</span>
+              <span>Pound Table</span>
+            </a>
+          </div>
+        </div>
+        <!-- top-content结束 -->
+      </div>
+      <!-- top结束 -->
+      <div class="pound">
+        <div class="pound-inner">
+          <a href="./answer.html">
+            <img src="./images/chat1.png" alt="" />
+            <div>
+              <h4>不想上班</h4>
+              <span>还有3天结束</span>
+            </div>
+            <span id="active">></span>
+          </a>
+        </div>
+        <!-- pound-inner结束 -->
+        <div class="pound-inner">
+          <a href="./answer.html">
+            <img src="./images/chat2.png" alt="" />
+            <div>
+              <h4>不想上班</h4>
+              <span>还有3天结束</span>
+            </div>
+            <span id="active">></span>
+          </a>
+        </div>
+        <!-- pound-inner结束 -->
+        <div class="pound-inner">
+          <a href="./answer.html">
+            <img src="./images/chat3.png" alt="" />
+            <div>
+              <h4>不想上班</h4>
+              <span>还有3天结束</span>
+            </div>
+            <span id="active">></span>
+          </a>
+        </div>
+        <!-- pound-inner结束 -->
+        <div class="pound-inner">
+          <a href="./answer.html">
+            <img src="./images/chat4.png" alt="" />
+            <div>
+              <h4>不想上班</h4>
+              <span>还有3天结束</span>
+            </div>
+            <span id="active">></span>
+          </a>
+        </div>
+        <!-- pound-inner结束 -->
+        <div class="pound-inner">
+          <a href="./answer.html">
+            <img src="./images/chat2.png" alt="" />
+            <div>
+              <h4>不想上班</h4>
+              <span>还有3天结束</span>
+            </div>
+            <span id="active">></span>
+          </a>
+        </div>
+        <!-- pound-inner结束 -->
+        <div class="pound-inner">
+          <a href="./answer.html">
+            <img src="./images/chat1.png" alt="" />
+            <div>
+              <h4>不想上班</h4>
+              <span>还有3天结束</span>
+            </div>
+            <span id="active">></span>
+          </a>
+        </div>
+        <!-- pound-inner结束 -->
+      </div>
+      <!-- pound结束 -->
+      <footer>
+        <div class="foot-nav">
+          <div class="foot-content  ">
+            <a href="./shouye.html">
+              <i class="iconfont  icon-shouye"></i>
+              <span>首页</span></a
+            >
+          </div>
+          <div class="foot-content">
+            <a href="./message.html">
+              <i class="iconfont  icon-xiaoxi"></i>
+              <span>消息</span></a
+            >
+          </div>
+          <div class="foot-content jia">
+            <a href="./newcontent.html">
+              <i class="iconfont  icon-tianjia tianjia"></i
+            ></a>
+          </div>
+          <div class="foot-content">
+            <a href="./topic.html" id="active">
+              <i class="iconfont  icon-huati"></i>
+              <span>话题</span></a
+            >
+          </div>
+          <div class="foot-content">
+            <a href="./wode.html">
+              <i class="iconfont  icon-wode"></i>
+              <span>我的</span></a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- footer结束 -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>我的</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+      .wrap .top {
+        width: 100%;
+        background-image: url('./images/wode-bg.png');
+        border-bottom-left-radius: 0.2rem;
+        border-bottom-right-radius: 0.2rem;
+        height: 4.21rem;
+        box-shadow: 0rem 0rem 1rem #ccc;
+      }
+      .wrap .top .top-title {
+        display: flex;
+        padding: 0.3rem 0.3rem;
+        justify-content: space-between;
+      }
+      .wrap .top .top-title > span {
+        font-size: 0.3rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .wrap .top .top-title > a {
+        font-size: 0.3rem;
+      }
+      .wrap .top .top-introduce {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0.3rem;
+      }
+      .wrap .top .top-introduce > img {
+        display: block;
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 0.16rem;
+      }
+      .wrap .top .top-introduce > div {
+        font-size: 0.3rem;
+      }
+      .wrap .top .top-introduce > div span {
+        color: #fff;
+      }
+      .wrap .top .top-introduce > div p {
+        color: rgba(0, 0, 0, 0.4);
+      }
+      /* <!-- top-introduce 结束--> */
+      .wrap .top .top-personal {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrap .top .top-personal .personal {
+        width: 30%;
+        font-size: 0.3rem;
+        color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+      }
+      .wrap .top .top-personal .personal p {
+        margin-bottom: 0;
+        margin-top: 0.1rem;
+      }
+      .wrap .main {
+        width: 100%;
+        background-color: #f8f8f8;
+        padding-bottom: 1.2rem;
+        margin-bottom: 0.2rem;
+      }
+      .wrap .main .main-content {
+      }
+      .wrap .main .main-content .collection {
+        padding: 0.3rem;
+        background-color: #fff;
+      }
+      .wrap .main .main-content .collection .collect-title {
+        display: flex;
+        font-size: 0.3rem;
+        justify-content: space-between;
+        padding-bottom: 0.2rem;
+      }
+      .wrap .main .main-content .collection .collect-title a {
+        color: #333;
+      }
+      .wrap .main .main-content .collection .collects {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+      }
+      .wrap .main .main-content .collection .collects > div {
+        width: 30%;
+      }
+      .wrap .main .main-content .collection .collects > div img {
+        display: block;
+        width: 2rem;
+      }
+      .wrap .main .main-content .collection .collects > div span {
+        font-size: 0.3rem;
+        display: block;
+        text-align: center;
+      }
+      .wrap .main .main-nav {
+        margin-top: 0.2rem;
+        padding: 0.2rem 0.3rem;
+        background-color: #fff;
+      }
+      .wrap .main .main-nav .list {
+        border-bottom: 1px solid rgba(168, 165, 165, 0.2);
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+      }
+      .wrap .main .main-nav .list:last-child {
+        border-bottom: none;
+      }
+      .wrap .main .main-nav .list a {
+        display: block;
+        font-size: 0.3rem;
+        color: #000;
+        display: flex;
+        height: 0.5rem;
+        box-sizing: border-box;
+        line-height: 0.5rem;
+      }
+      .wrap .main .main-nav .list a > img {
+        width: 0.44rem;
+        height: 0.44rem;
+        display: block;
+        margin-right: 0.1rem;
+      }
+      .wrap .main .main-nav .list a > span {
+        margin-right: 0.2rem;
+      }
+      .wrap .main .main-nav .list a div {
+        display: flex;
+        justify-content: space-between;
+        color: #ccc;
+        font-size: 0.22rem;
+        width: 5.1rem;
+        margin-right: 0.2rem;
+      }
+      .wrap .main .main-nav .list a div p:last-child {
+        font-size: 0.3rem;
+        color: #666;
+      }
+      .wrap .main .main-nav .list a p {
+        margin: 0;
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="top-title">
+          <a href="#">添加好友</a>
+          <span>我</span>
+          <a href="#">设置</a>
+        </div>
+        <!-- top-title 结束-->
+        <div class="top-introduce">
+          <img src="./images/wode-header.png" alt="" />
+          <div>
+            <span>四方温泉</span>
+            <p>简介：黄泉花开，我才能去见他</p>
+          </div>
+        </div>
+        <!-- top-introduce 结束-->
+        <div class="top-personal">
+          <div class="personal">
+            <span>308</span>
+            <p>我的回信</p>
+          </div>
+          <!-- personal 结束-->
+          <div class="personal">
+            <span>308</span>
+            <p>我的关注</p>
+          </div>
+          <!-- personal 结束-->
+          <div class="personal">
+            <span>308</span>
+            <p>我的粉丝</p>
+          </div>
+          <!-- personal 结束-->
+        </div>
+        <!-- top-personal 结束-->
+      </div>
+      <!-- top 结束-->
+      <div class="main">
+        <div class="main-content">
+          <div class="collection">
+            <div class="collect-title">
+              <span>
+                我的一处
+              </span>
+              <a href="#">...</a>
+            </div>
+            <!-- title 结束-->
+            <div class="collects">
+              <div>
+                <img src="./images/wode-con.png" alt="" />
+                <span>一粒</span>
+              </div>
+              <div>
+                <img src="./images/wode-con1.png" alt="" />
+                <span>一粒</span>
+              </div>
+              <div>
+                <img src="./images/wode-con2.png" alt="" />
+                <span>一粒</span>
+              </div>
+            </div>
+            <!-- collects 结束-->
+          </div>
+          <!-- collection 结束-->
+          <div class="main-nav">
+            <div class="list">
+              <a href="#">
+                <img src="./images/wode-nav1.png" alt="" />
+                <span>收藏</span>
+                <div>
+                  <p>文章 歌曲 精彩问答都在这里了</p>
+                  <p>32</p>
+                </div>
+                <p>></p>
+              </a>
+            </div>
+            <div class="list">
+              <a href="#">
+                <img src="./images/wode-nav2.png" alt="" />
+                <span>回信</span>
+                <div>
+                  <p>你的回信</p>
+                  <p>32</p>
+                </div>
+                <p>></p>
+              </a>
+            </div>
+            <div class="list">
+              <a href="#">
+                <img src="./images/wode-nav3.png" alt="" />
+                <span>提问</span>
+                <div>
+                  <p>你的提问</p>
+                  <p>32</p>
+                </div>
+                <p>></p>
+              </a>
+            </div>
+            <div class="list">
+              <a href="#">
+                <img src="./images/wode-nav4.png" alt="" />
+                <span>钱包</span>
+                <div>
+                  <p>邀请朋友来拿钱</p>
+                  <p>32</p>
+                </div>
+                <p>></p>
+              </a>
+            </div>
+          </div>
+          <!--main- nav 结束-->
+        </div>
+        <!--main- collect 结束-->
+      </div>
+      <!--main结束-->
+      <footer>
+        <div class="foot-nav">
+          <div class="foot-content  ">
+            <a href="./shouye.html">
+              <i class="iconfont  icon-shouye"></i>
+              <span>首页</span></a
+            >
+          </div>
+          <div class="foot-content">
+            <a href="./message.html">
+              <i class="iconfont  icon-xiaoxi"></i>
+              <span>消息</span></a
+            >
+          </div>
+          <div class="foot-content jia">
+            <a href="./newcontent.html">
+              <i class="iconfont  icon-tianjia tianjia"></i
+            ></a>
+          </div>
+          <div class="foot-content">
+            <a href="./topic.html">
+              <i class="iconfont  icon-huati"></i>
+              <span>话题</span></a
+            >
+          </div>
+          <div class="foot-content">
+            <a href="./wode.html" id="active">
+              <i class="iconfont  icon-wode"></i>
+              <span>我的</span></a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- footer结束 -->
+    </div>
+    <!-- wrap 结束-->
+  </body>
+</html>

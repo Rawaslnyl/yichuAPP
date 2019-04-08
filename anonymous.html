@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>新建</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/top.css" />
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .wrap .top .top-inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        line-height: 0.8rem;
+        height: 1.4rem;
+        box-sizing: border-box;
+        padding-top: 0.6rem;
+      }
+      .wrap .top .top-inner a {
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 0.3rem;
+      }
+      .wrap .top .top-inner a:last-child {
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        border-radius: 0.6rem;
+        width: 1.6rem;
+        text-align: center;
+      }
+      .wrap .main {
+        width: 100%;
+        padding-top: 1.6rem;
+      }
+      .wrap .main .main-inner {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2rem;
+      }
+      .wrap .main .main-inner .main-title {
+        font-size: 0.4rem;
+        color: #28b9ac;
+        font-weight: lighter;
+        font-family: serif;
+        text-align: center;
+      }
+      .wrap .main .main-inner textarea {
+        width: 100%;
+        background-color: #cdeae5;
+        border: 0;
+        height: 6rem;
+        border-radius: 0.3rem;
+        margin-top: 0.2rem;
+        outline: none;
+        padding: 0.3rem;
+        box-sizing: border-box;
+        font-size: 0.3rem;
+      }
+      .wrap .main .main-inner .public {
+        position: relative;
+      }
+      .wrap .main .main-inner .public a {
+        font-size: 0.3rem;
+        border: 1px solid #28b9ac;
+        border-radius: 0.6rem;
+        width: 1.6rem;
+        text-align: center;
+        display: block;
+        color: #28b9ac;
+        position: absolute;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="top-inner">
+          <a href="./shouye.html"><i class="iconfont icon-xiazai6"></i></a>
+          <a href="./newcontent.html"><span>匿名发布</span></a>
+        </div>
+      </div>
+      <!-- top结束 -->
+      <div class="main">
+        <div class="main-inner">
+          <div class="main-title">
+            我在这里,等风也等你。
+          </div>
+          <textarea name="" id=""></textarea>
+          <div class="public">
+            <a href="./newcontent.html">悄悄话</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wrap结束 -->
+  </body>
+</html>

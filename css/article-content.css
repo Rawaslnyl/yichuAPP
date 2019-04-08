@@ -1,0 +1,84 @@
+/* article-content 开始*/
+.wrap .article-content {
+  background-color: #f8f8f8;
+}
+.wrap .article-content article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.4rem 0.1rem;
+  background-color: #fff;
+}
+.wrap .article-content article:last-child {
+  padding-bottom: 1.2rem;
+}
+.wrap .article-content article .art-top {
+  font-size: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.6rem;
+}
+.wrap .article-content article .art-top > span {
+  border-left: 0.06rem solid #28b9ac;
+  color: #28b9ac;
+  padding-left: 0.12rem;
+}
+.wrap .article-content article .art-top > div {
+  display: flex;
+}
+.wrap .article-content article .art-top > div > img {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-left: 0.2rem;
+}
+.wrap .article-content article .art-main {
+  display: flex;
+}
+.wrap .article-content article .art-main .art-main-left {
+  width: 48%;
+  margin-right: 2%;
+}
+.wrap .article-content article .art-main .art-main-left h4 {
+  font-size: 0.32rem;
+}
+.wrap .article-content article .art-main .art-main-left p {
+  font-size: 0.26rem;
+  display: -webkit-box;
+  overflow: hidden;
+  /* 文本不换行 */
+  /* white-space: nowrap; */
+  /* 文本超出部分三个点 */
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.wrap .article-content article .art-main .art-main-right {
+  width: 50%;
+}
+.wrap .article-content article .art-main .art-main-right > img {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.wrap .article-content article .art-footer {
+  display: flex;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  justify-content: space-between;
+}
+.wrap .article-content article .art-footer span {
+  font-size: 0.2rem;
+}
+.wrap .article-content article .art-footer > div {
+  width: 3rem;
+  display: flex;
+}
+.wrap .article-content article .art-footer > div > .comments {
+  display: flex;
+  width: 1rem;
+}
+.wrap .article-content article .art-footer > div > .comments i {
+  margin-right: 0.1rem;
+}
+/* article-content 结束*/

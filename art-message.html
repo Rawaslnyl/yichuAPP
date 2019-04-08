@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>我更喜欢努力的自己</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .wrap .top {
+        background-image: url('./images/art-message.png');
+        height: 5.5rem;
+        width: 100%;
+        background-size: 100%;
+      }
+      .wrap .top .top-title {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0.6rem;
+      }
+      .wrap .top .top-title a {
+        font-size: 0.3rem;
+        color: #28b9ac;
+        display: block;
+      }
+      .wrap .top .top-title span {
+        display: block;
+        font-size: 0.3rem;
+        width: 1.4rem;
+        color: #fff;
+        border-radius: 0.3rem;
+        text-align: center;
+        border: 1px solid #28b9ac;
+      }
+      .wrap .main {
+        width: 100%;
+      }
+      .wrap .main .main-inner {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.3rem;
+        padding-top: 0.2rem;
+      }
+      .wrap .main .main-inner span:first-child {
+        border-left: 1px solid #28b9ac;
+        color: #28b9ac;
+        padding-left: 0.1rem;
+      }
+      .wrap .main .main-inner h4 {
+        font-size: 0.6rem;
+        font-weight: lighter;
+        margin: 0.16rem 0;
+      }
+      .wrap .main .main-inner span:nth-child(3) {
+        color: #666;
+        font-size: 0.2rem;
+      }
+      .wrap .main .main-inner p {
+        color: #333;
+        line-height: 0.6rem;
+      }
+      .wrap footer {
+        position: fixed;
+        bottom: 0;
+        height: 0.2rem;
+      }
+      .wrap footer div {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrap footer a {
+        display: block;
+        width: 30%;
+        font-size: 0.3rem;
+        color: #28b9ac;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="top-title">
+          <a href="./shouye.html"><i class="iconfont icon-xiazai6"></i></a>
+          <span id="pick">未关注</span>
+        </div>
+      </div>
+      <!-- top结束 -->
+      <div class="main">
+        <div class="main-inner">
+          <span>浮世绘</span>
+          <h4>我更喜欢努力的自己</h4>
+          <span>2017/08/30</span>
+          <p>
+            轻轻的我走了，<br />
+            正如我轻轻的来；<br />
+            我轻轻的招手，<br />
+            作别西天的云彩。<br />
+            那河畔的金柳，<br />
+            是夕阳中的新娘；<br />
+            波光里的艳影，<br />
+            在我的心头荡漾。<br />
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="dian">
+          <a href="#" class="point" style="color:#28b9ac"
+            ><i class="iconfont icon-xin" class="xin"></i
+          ></a>
+          <a href="#"><i class="iconfont icon-pinglun"></i></a>
+          <a href="#"><i class="iconfont icon-fenxiang1"></i></a>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var pink = document.querySelector('#pick');
+      pink.onclick = function() {
+        var val = document.querySelector('#pick').innerText;
+        console.log(val);
+
+        if (val === '未关注') {
+          pick.innerText = '关注';
+          console.log('2');
+        } else {
+          pick.innerText = '未关注';
+        }
+      };
+      var point = document.querySelector('.point');
+      var xin = document.querySelector('.xin');
+      point.onclick = function() {
+        console.log(point.style.color);
+        if (point.style.color === 'rgb(40, 185, 172)') {
+          this.style.color = 'red';
+          console.log('12');
+        } else {
+          this.style.color = 'rgb(40, 185, 172)';
+        }
+      };
+    </script>
+  </body>
+</html>

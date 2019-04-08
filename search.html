@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>搜索</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap {
+        background-image: url('./images/search-bg.jpg');
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: 100%;
+      }
+      .wrap .contact {
+        box-sizing: border-box;
+        padding: 0.3rem 0.3rem 0.1rem;
+        display: flex;
+      }
+      .wrap .contact .contact-inner {
+        padding-left: 0.2rem;
+        background-color: #fff;
+        border-radius: 0.1rem;
+        height: 0.8rem;
+        display: flex;
+        line-height: 0.8rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.16rem;
+        width: 80%;
+      }
+      .wrap .contact .contact-inner i {
+        display: block;
+        margin-right: 0.1rem;
+      }
+      .wrap .contact .contact-inner > input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        display: block;
+      }
+      .wrap .contact a {
+        display: block;
+        font-size: 0.3rem;
+        width: 20%;
+        line-height: 0.8rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.16rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="contact">
+        <div class="contact-inner">
+          <i class="iconfont  icon-icon-plus-search"></i>
+          <input type="text" placeholder="请输入关键字搜索" />
+        </div>
+        <a href="./shouye.html">取消</a>
+      </div>
+    </div>
+  </body>
+</html>

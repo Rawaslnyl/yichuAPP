@@ -1,0 +1,39 @@
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 999;
+}
+.foot-nav {
+  width: 7rem;
+  margin: 0 auto;
+  height: 1.2rem;
+  display: flex;
+}
+.foot-nav .foot-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.3rem;
+  width: 20%;
+  text-align: center;
+  padding-top: 0.14rem;
+}
+.foot-nav .foot-content a {
+  color: #000;
+}
+.foot-nav .foot-content i {
+  display: block;
+  font-size: 0.5rem;
+}
+.foot-nav .jia {
+  padding: 0.28rem;
+  box-sizing: border-box;
+}
+.foot-nav .foot-content .tianjia {
+  background-color: #28b9ac;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 0.8rem;
+}

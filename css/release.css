@@ -1,0 +1,55 @@
+.wrap .release {
+  font-size: 0.3rem;
+  padding: 0.2rem 0.3rem;
+  margin-top: 0.2rem;
+  background-color: #fff;
+}
+.wrap .release .rel-title {
+  display: flex;
+  width: 100%;
+}
+.wrap .release .rel-title img {
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.wrap .release .rel-title span {
+  line-height: 0.6rem;
+  margin-left: 0.16rem;
+}
+.wrap .release h4 {
+  height: 0.2rem;
+  margin-top: 0.1rem;
+}
+.wrap .release p {
+  width: 6.8rem;
+  display: -webkit-box;
+  overflow: hidden;
+  /* 文本不换行 */
+  /* white-space: nowrap; */
+  /* 文本超出部分三个点 */
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: #9a9a9a;
+}
+.wrap .release .rel-footer {
+  display: flex;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  justify-content: space-between;
+}
+.wrap .release .rel-footer span {
+  font-size: 0.2rem;
+}
+.wrap .release .rel-footer > div {
+  width: 3rem;
+  display: flex;
+}
+.wrap .release .rel-footer > div > .comments {
+  display: flex;
+  width: 1rem;
+}
+.wrap .release .rel-footer > div > .comments i {
+  margin-right: 0.1rem;
+}

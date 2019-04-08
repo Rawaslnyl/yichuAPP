@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>早安故事</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/article-content.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #f8f8f8;
+      }
+      .wrap .top .top-inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        color: rgba(0, 0, 0, 0.6);
+        justify-content: space-around;
+      }
+      .wrap .top .top-inner a {
+        display: block;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .wrap .top .top-inner > span {
+        width: 60%;
+        box-sizing: border-box;
+      }
+      .wrap .top .top-inner span {
+        font-size: 0.3rem;
+        line-height: 1.8rem;
+      }
+      .wrap .top .top-inner > div span:first-child {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+      }
+      .wrap .top .top-inner > div span:last-child {
+        color: rgba(0, 0, 0, 0.4);
+      }
+      .wrap .article-content {
+        padding-top: 1.6rem;
+      }
+      .wrap .article-content article {
+        background-color: #f8f8f8;
+      }
+      .wrap .article-content article .art-top {
+        line-height: 0.4rem;
+      }
+      .wrap .article-content article .art-top > div > img {
+        margin-top: 0.1rem;
+        margin-right: 0.2rem;
+        margin-left: 0;
+      }
+      .wrap .article-content article .art-top > div span {
+        font-size: 0.2rem;
+      }
+      .wrap .article-content article .art-top > div > div {
+        display: flex;
+        flex-direction: column;
+      }
+      .wrap .article-content article .art-main {
+        box-sizing: border-box;
+        border-radius: 0.3rem;
+        background-color: #fff;
+        margin-top: 0.2rem;
+      }
+      .wrap .article-content article .art-main .art-main-left {
+        width: 48%;
+        padding: 0.3rem;
+        box-sizing: border-box;
+      }
+      .wrap .article-content article .art-main .art-main-right > img {
+        height: 3rem;
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="top-inner">
+          <a href="./shouye.html"><i class="iconfont icon-xiazai6"></i></a>
+          <span>早安故事</span>
+          <div>
+            <span>Hot</span>
+            <span>New</span>
+          </div>
+        </div>
+      </div>
+      <!-- top 结束 -->
+      <div class="article-content">
+        <article>
+          <div class="art-top">
+            <div>
+              <img src="./images/chat2.png" alt="" />
+              <div>
+                <span>机智的美少女</span>
+                <span>2017/02/28</span>
+              </div>
+            </div>
+          </div>
+          <div class="art-main">
+            <div class="art-main-left">
+              <h4>另一个生日</h4>
+              <p>
+                我的生日的好好看看喝咖啡会客户看房后付款方环境
+              </p>
+            </div>
+            <div class="art-main-right">
+              <img src="./images/article9.png" alt="" />
+            </div>
+          </div>
+          <div class="art-footer">
+            <div>
+              <div class="comments">
+                <i class="iconfont  icon-yanjing"></i>
+                <span>1.8k</span>
+              </div>
+              <div class="comments">
+                <i class="iconfont  icon-xin point" style="color:#000"></i>
+                <span class="dianji">180</span>
+              </div>
+              <div class="comments">
+                <i class="iconfont  icon-xiaoxi"></i>
+                <span>1.8k</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- article 结束-->
+        <article>
+          <div class="art-top">
+            <div>
+              <img src="./images/chat1.png" alt="" />
+              <div>
+                <span>机智的美少女</span>
+                <span>2017/02/28</span>
+              </div>
+            </div>
+          </div>
+          <div class="art-main">
+            <div class="art-main-left">
+              <h4>另一个生日</h4>
+              <p>
+                我的生日的好好看看喝咖啡会客户看房后付款方环境
+              </p>
+            </div>
+            <div class="art-main-right">
+              <img src="./images/article9.png" alt="" />
+            </div>
+          </div>
+          <div class="art-footer">
+            <div>
+              <div class="comments">
+                <i class="iconfont  icon-yanjing"></i>
+                <span>1.8k</span>
+              </div>
+              <div class="comments">
+                <i class="iconfont  icon-xin"></i>
+                <span>1.8k</span>
+              </div>
+              <div class="comments">
+                <i class="iconfont  icon-xiaoxi"></i>
+                <span>1.8k</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- article 结束-->
+        <article>
+          <div class="art-top">
+            <div>
+              <img src="./images/chat3.png" alt="" />
+              <div>
+                <span>机智的美少女</span>
+                <span>2017/02/28</span>
+              </div>
+            </div>
+          </div>
+          <div class="art-main">
+            <div class="art-main-left">
+              <h4>另一个生日</h4>
+              <p>
+                我的生日的好好看看喝咖啡会客户看房后付款方环境
+              </p>
+            </div>
+            <div class="art-main-right">
+              <img src="./images/article9.png" alt="" />
+            </div>
+          </div>
+          <div class="art-footer">
+            <div>
+              <div class="comments">
+                <i class="iconfont  icon-yanjing"></i>
+                <span>1.8k</span>
+              </div>
+              <div class="comments">
+                <i class="iconfont  icon-xin"></i>
+                <span>1.8k</span>
+              </div>
+              <div class="comments">
+                <i class="iconfont  icon-xiaoxi"></i>
+                <span>1.8k</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- article 结束-->
+      </div>
+      <!-- article-content结束 -->
+    </div>
+    <!-- .wrap 结束 -->
+    <script src="./js/point.js"></script>
+  </body>
+</html>

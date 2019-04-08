@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/article-content.css">
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap {
+        width: 100%;
+      }
+     
+      .wrap>.top>div{
+        display: flex;
+        justify-content: space-between;
+        height: 0.85rem;
+        margin-top: 0.8rem;
+        line-height: 0.36rem;
+        
+      }    
+      .wrap .top div>img {
+        display: block;
+        width: 1.85rem;
+        height: 0.85rem;
+        padding-left: 0.18rem
+      }
+      .wrap .top div> .onep {
+      
+        margin-right: 2.3rem;
+        margin-left: 1.6rem;
+      }
+      .wrap .top div> .onep >span{
+        font-size: 0.34rem;
+        color: rgba(255, 255, 255, 0.8);
+        display: block;
+        line-height: 0.86rem;
+      }
+      .wrap .top div> a{
+        display: block;
+      }
+      .wrap .top div> a>img{
+       width:0.5rem;
+       height: 0.8rem;
+      }
+      
+    .wrap .role{
+        width: 6.8rem;
+        margin: 0 auto;
+        display: flex;
+       margin-top: 0.46rem;
+        box-shadow: 0rem -0.1rem 0.6rem rgba(207, 206, 206, 0.8);
+       
+    }
+    .wrap .role >a{
+      display: block;
+      color: #b1b1b1;
+      padding: 0.46rem;
+    }
+    .wrap .role >a>i{
+      display: block;
+      font-size: 0.48rem;
+    }
+    
+    
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div>          
+            <img src="./images/sunny.png" alt="" />       
+       <div class="onep">
+         <span>一处</span>
+       </div>
+        <a href="./search.html">
+          <img src="./images/search.png" alt="" />
+        </div>        
+        </a>
+      </div>
+      <!-- top结束 -->
+      <div class="swip">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/banner.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><img src="./images/banner2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./images/banner.jpg" alt=""></div>
+                               
+              </div>
+              <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- swiper结束 -->
+    <div class="role">
+      <a href="#"><i class="iconfont icon-yinyue " id="active"></i></a>
+      <a href="#"><i class="iconfont icon-bofang"></i></a>
+      <a href="./articlecontent.html"><i class="iconfont icon-wenzhang"></i></a>
+      <a href="./radio.html"><i class="iconfont icon-diantaizhibo"></i></a>
+      <a href="#"><i class="iconfont icon-bangdan"></i></a>
+    </div>
+    <!-- role结束 -->
+    <div class="article-content">
+        <article>
+          <div class="art-top">
+            <span>浮世绘</span>
+            <div>
+              <span>一处精选</span>
+              <img src="./images/art-top.jpg" alt="">
+            </div>           
+          </div>
+          <div class="art-main">
+            <div class="art-main-left">
+              <h4>老了又怎么，又不耽误好好活着</h4>
+              <p>《奇葩说》第四期的问题是：“如果你的父母提出和你幻化卡还是肯定会款式好看好看很快就恢复”你幻化卡还是肯定会款式好</p>
+            </div>
+            <div class="art-main-right">
+               <img src="./images/art-main.jpg" alt="">
+            </div>         
+          </div>
+          <div class="art-footer">
+            <span>05-20 20:56</span>
+            <div>
+                <div class="comments">
+                  <i class="iconfont  icon-yanjing"></i>
+                  <span>1.8k</span>
+                </div>
+                <div class="comments">
+                    <i class="iconfont  icon-xin point" style="color:#000"></i>
+                        <span class="dianji">180</span>
+                  </div>
+                  <div class="comments">
+                      <i class="iconfont  icon-xiaoxi"></i>
+                      <span>1.8k</span>
+                    </div>
+            </div>
+          </div>
+        </article>
+        <!-- article 结束-->
+        <article class="art-message">
+            <div class="art-top">
+              <span>浮世绘</span>
+              <div>
+                <span>一处精选</span>
+                <img src="./images/art-top1.jpg" alt="">
+              </div>           
+            </div>
+            <div class="art-main">
+              <div class="art-main-left">
+                <h4>我更喜欢努力的自己</h4>
+                <p>《奇葩说》第四期的问题是：“如果你的父母提出和你幻化卡还是肯定会款式好看好看很快就恢复”你幻化卡还是肯定会款式好</p>
+              </div>
+              <div class="art-main-right">
+                 <img src="./images/art-main1.jpg" alt="">
+              </div>         
+            </div>
+            <div class="art-footer">
+              <span>05-20 20:56</span>
+              <div>
+                  <div class="comments">
+                    <i class="iconfont  icon-yanjing"></i>
+                    <span>1.8k</span>
+                  </div>
+                  <div class="comments">
+                      <i class="iconfont  icon-xin point" style="color:#000"></i>
+                      <span class="dianji">180</span>
+                    </div>
+                    <div class="comments">
+                        <i class="iconfont  icon-xiaoxi"></i>
+                        <span>1.8k</span>
+                      </div>
+              </div>
+            </div>
+          </article>
+          <!-- article 结束-->
+          <article>
+              <div class="art-top">
+                <span>浮世绘</span>
+                <div>
+                  <span>一处精选</span>
+                  <img src="./images/art-top.jpg" alt="">
+                </div>           
+              </div>
+              <div class="art-main">
+                <div class="art-main-left">
+                  <h4>老了又怎么，又不耽误好好活着</h4>
+                  <p>《奇葩说》第四期的问题是：“如果你的父母提出和你幻化卡还是肯定会款式好看好看很快就恢复”你幻化卡还是肯定会款式好</p>
+                </div>
+                <div class="art-main-right">
+                   <img src="./images/art-main.jpg" alt="">
+                </div>         
+              </div>
+              <div class="art-footer">
+                <span>05-20 20:56</span>
+                <div>
+                    <div class="comments">
+                      <i class="iconfont  icon-yanjing"></i>
+                      <span>1.8k</span>
+                    </div>
+                    <div class="comments">
+                        <i class="iconfont  icon-xin point" style="color:#000"></i>
+                        <span class="dianji">180</span>
+                      </div>
+                      <div class="comments">
+                          <i class="iconfont  icon-xiaoxi"></i>
+                          <span>1.8k</span>
+                        </div>
+                </div>
+              </div>
+            </article>
+            <!-- article 结束-->
+    </div>
+     <!-- article-content结束 -->
+     <footer>
+       <div class="foot-nav">
+          <div class="foot-content  ">
+            <a href="./shouye.html" id="active">
+              <i class="iconfont  icon-shouye"></i>           
+              <span>首页</span></a>  
+          </div>
+          <div class="foot-content">
+              <a href="./message.html">
+              <i class="iconfont  icon-xiaoxi"></i>
+              <span>消息</span></a>
+          </div>
+          <div class="foot-content jia">
+              <a href="./newcontent.html">
+              <i class="iconfont  icon-tianjia tianjia"></i></a>     
+          </div>
+          <div class="foot-content">
+              <a href="./topic.html">
+              <i class="iconfont  icon-huati"></i>
+              <span>话题</span></a>
+          </div>
+          <div class="foot-content">
+              <a href="./wode.html">
+              <i class="iconfont  icon-wode"></i>
+              <span>我的</span></a>
+          </div>
+       </div>
+     </footer><!-- footer结束 -->
+    </div><!-- wrap结束 -->
+
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/point.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+     
+    document.querySelector('.art-message').onclick=function(){
+      location.href = './art-message.html';      
+    }
+    
+  </script>
+  </body>
+</html>

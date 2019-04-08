@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>电台</title>
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/iconfont.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/article-content.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <script>
+      // https://www.cnblogs.com/well-nice/p/5509589.html
+      // 动态修改 html 的 font-size 屏幕的宽度/奢极高的尺寸/100
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px';
+      // 给行元素设置font-size 小于 1rem 时,会出现 bug,将行转化为块
+    </script>
+    <style>
+      .wrap {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #f8f8f8;
+      }
+      .wrap .top .top-inner {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .wrap .top .top-inner a {
+        display: block;
+        width: 46%;
+        color: rgba(0, 0, 0, 0.6);
+      }
+      .wrap .top .top-inner span {
+        width: 53%;
+        font-size: 0.3rem;
+        line-height: 1.8rem;
+      }
+      .wrap .classification {
+        width: 100%;
+        margin-top: 1.8rem;
+        background-color: #fff;
+      }
+      .wrap .classification .classifiy-title {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+        color: #28b9ac;
+        line-height: 0.4rem;
+        padding: 0.2rem 0;
+      }
+      .wrap .classification .classifiy-title div:first-child {
+        font-size: 0.2rem;
+        border-left: 1px solid #28b9ac;
+        padding-left: 0.1rem;
+      }
+      .wrap .classification .classifiy-img {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.1rem;
+        box-sizing: border-box;
+      }
+      .wrap .classification .classifiy-img a {
+        display: block;
+        width: 32.2%;
+        height: 2rem;
+      }
+      .wrap .classification .classifiy-img a > img {
+        display: block;
+        width: 100%;
+        height: 2rem;
+      }
+      .wrap .article-content{
+        padding-bottom: 0.6rem;
+      }
+      .wrap .article-content article .art-main .art-main-right{
+        width: 42%;
+        margin-right: 3%;
+        
+      }
+      .wrap .article-content article .art-main .art-main-right>img{
+        height: 2.4rem;
+      }
+      .wrap .article-content article .art-main .art-main-left{
+        margin-right: 0;
+        box-sizing: border-box;
+        padding-top: 0.4rem;
+      }
+      .wrap .article-content article .art-main .art-main-left >p{
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div class="top-inner">
+          <a href="./shouye.html"><i class="iconfont icon-xiazai6"></i></a>
+          <span>文章</span>
+        </div>
+      </div>
+      <!-- top 结束 -->
+      <div class="classification">
+        <div class="classifiy-title">
+          <div>分类</div>
+          <div>...</div>
+        </div>
+        <div class="classifiy-img">
+          <a href="./story.html">
+            <img src="./images/article.png" alt="" />
+          </a>
+          <a href="./story.html">
+            <img src="./images/article1.png" alt="" />
+          </a>
+          <a href="./story.html">
+            <img src="./images/article2.png" alt="" />
+          </a>
+        </div>
+        <!-- classifiy-img 结束 -->
+        <div class="classifiy-img">
+          <a href="./story.html">
+            <img src="./images/article3.png" alt="" />
+          </a>
+          <a href="./story.html">
+            <img src="./images/article4.png" alt="" />
+          </a>
+          <a href="./story.html">
+            <img src="./images/article5.png" alt="" />
+          </a>
+        </div>
+        <!-- classifiy-img 结束 -->
+        <div class="classifiy-img">
+          <a href="./story.html">
+            <img src="./images/article6.png" alt="" />
+          </a>
+          <a href="./story.html">
+            <img src="./images/article7.png" alt="" />
+          </a>
+          <a href="./story.html">
+            <img src="./images/article8.png" alt="" />
+          </a>
+        </div>
+        <!-- classifiy-img 结束 -->
+      </div><!-- classisition结束-->
+          <div class="article-content">
+              <article>
+                <div class="art-top">
+                  <span>热门文章</span>
+                  <div>
+                    ...
+                  </div>           
+                </div>
+                <div class="art-main">
+                  <div class="art-main-right">    
+                     <img src="./images/article9.png" alt="">
+                  </div>         
+                  <div class="art-main-left">
+                    <h4>人生的选择你都会后悔</h4>
+                    <p>by:马茉莉和欧小马</p>
+                  </div>
+                  
+                </div>
+                <div class="art-footer">
+                  <span>05-20 20:56</span>
+                  <div>
+                      <div class="comments">
+                        <i class="iconfont  icon-yanjing"></i>
+                        <span>1.8k</span>
+                      </div>
+                      <div class="comments">
+                          <i class="iconfont  icon-xin point" style="color:#000"></i>
+                        <span class="dianji">180</span>
+                        </div>
+                        <div class="comments">
+                            <i class="iconfont  icon-xiaoxi"></i>
+                            <span>1.8k</span>
+                          </div>
+                  </div>
+                </div>
+              </article>
+              <!-- article 结束-->
+              <div class="article-content">
+                  <article>
+                    <div class="art-top">
+                      <span>热门文章</span>
+                      <div>
+                        ...
+                      </div>           
+                    </div>
+                    <div class="art-main">
+                      <div class="art-main-right">    
+                         <img src="./images/article9.png" alt="">
+                      </div>         
+                      <div class="art-main-left">
+                        <h4>人生的选择你都会后悔</h4>
+                        <p>by:马茉莉和欧小马</p>
+                      </div>
+                      
+                    </div>
+                    <div class="art-footer">
+                      <span>05-20 20:56</span>
+                      <div>
+                          <div class="comments">
+                            <i class="iconfont  icon-yanjing"></i>
+                            <span>1.8k</span>
+                          </div>
+                          <div class="comments">
+                              <i class="iconfont  icon-xin"></i>
+                              <span>1.8k</span>
+                            </div>
+                            <div class="comments">
+                                <i class="iconfont  icon-xiaoxi"></i>
+                                <span>1.8k</span>
+                              </div>
+                      </div>
+                    </div>
+                  </article>
+                  <!-- article 结束-->
+                  <footer>
+                      <div class="foot-nav">
+                         <div class="foot-content  ">
+                           <a href="./shouye.html" id="active">
+                             <i class="iconfont  icon-shouye"></i>           
+                             <span>首页</span></a>  
+                         </div>
+                         <div class="foot-content">
+                             <a href="./message.html">
+                             <i class="iconfont  icon-xiaoxi"></i>
+                             <span>消息</span></a>
+                         </div>
+                         <div class="foot-content jia">
+                             <a href="./newcontent.html">
+                             <i class="iconfont  icon-tianjia tianjia"></i></a>     
+                         </div>
+                         <div class="foot-content">
+                             <a href="./topic.html">
+                             <i class="iconfont  icon-huati"></i>
+                             <span>话题</span></a>
+                         </div>
+                         <div class="foot-content">
+                             <a href="./wode.html">
+                             <i class="iconfont  icon-wode"></i>
+                             <span>我的</span></a>
+                         </div>
+                      </div>
+                    </footer><!-- footer结束 -->
+    </div>
+    <!-- .wrap 结束 -->
+    <script src="./js/point.js"></script>
+  </body>
+</html>
